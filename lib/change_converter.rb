@@ -2,8 +2,10 @@ class ChangeConverter
   def convert(float)
     if float == 0
       []
-    else
+    elsif float == 0.01
       ["1p"]
+    elsif float == 0.02
+      ["2p"]
     end
   end
 

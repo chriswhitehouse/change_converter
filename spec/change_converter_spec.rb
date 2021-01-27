@@ -9,4 +9,8 @@ describe '#convert' do
   it 'should accept 0.01 and return ["1p"]' do
     expect(change_converter.convert(0.01)).to eq ["1p"]
   end
+
+  it 'should accept 0.02 and return ["2p"]' do
+    expect(change_converter.convert(0.02)).to eq ["2p"]
+  end
 end
